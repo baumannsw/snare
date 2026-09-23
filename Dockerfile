@@ -20,4 +20,5 @@ ENV PAGE_URL=$PAGE_URL \
 
 RUN clone --target "http://$PAGE_URL"
 
-CMD ["snare", "--no-dorks", "true", "--auto-update", "false", "--host-ip", "0.0.0.0", "--port", "80", "--page-dir", "$PAGE_URL", "--tanner", "$TANNER"]
+
+ENTRYPOINT ["/bin/sh", "-c", "exec snare --no-dorks=true --auto-update=false --host-ip=0.0.0.0 --port=\"$PORT\" --page-dir=\"$PAGE_URL\" --tanner=\"$TANNER\""]
