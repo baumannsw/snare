@@ -6,9 +6,9 @@ setup(
     name="Snare",
     version="0.3.0",
     description="Super Next generation Advanced Reactive honEypot",
-    author="MushMush Foundation",
-    author_email="glastopf@public.honeynet.org",
-    url="https://github.com/mushorg/snare",
+    author="Scott Baumann - forked from MushMush Foundation",
+    author_email="baumannsw@gmail.com",
+    url="https://github.com/baumannsw/snare",
     packages=find_packages(exclude=["*.pyc"]),
     scripts=["./bin/snare", "./bin/clone"],
 )
